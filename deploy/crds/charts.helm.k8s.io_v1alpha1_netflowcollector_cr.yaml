@@ -11,11 +11,11 @@ spec:
     write:
       s3:
         #endpoint is a required value, pointing to a working Object Store endpoint Example value - "http://localhost:9000"
-        endpoint: "http://localhost:9000"
+        endpoint: "s3.private.us-south.cloud-object-storage.appdomain.cloud"
         #installLocalMinio should be set to false. If set to true a default minio OS will be installed locally (in a container) for testing purposes only.
         installLocalMinio: true
-        region: "default"
-        use_api_key: false
+        region: "us-south"
+        use_api_key: true
         api_key: ""
         access_key: "admin"
         secret_key: "admin1234"
